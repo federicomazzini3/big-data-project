@@ -25,7 +25,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='real_brandClass_category' name='textscan.0m3lp2s0d4rbvk11vz9ov132m0jc'>
-            <connection class='textscan' directory='/Users/federicomazzini/Documents/uni/big-data/progetto/ecommerce-analysis/tableau' filename='real_brandClass_category.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/federicomazzini/Documents/uni/big-data/progetto/big-data-project/tableau' filename='real_brandClass_category.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0m3lp2s0d4rbvk11vz9ov132m0jc' name='real_brandClass_category.csv' table='[real_brandClass_category#csv]' type='table'>
@@ -120,8 +120,7 @@
       <aliases enabled='yes' />
       <column caption='Category' datatype='string' name='[F1]' role='dimension' type='nominal' />
       <column caption='BrandClass' datatype='string' name='[F2]' role='dimension' type='nominal' />
-      <column caption='Revenue' datatype='real' name='[F3]' role='measure' type='quantitative' />
-      <column caption='Count' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+      <column caption='Revenue' datatype='real' name='[F3]' role='dimension' type='ordinal' />
       <_.fcp.ObjectModelTableType.true...column caption='real_brandClass_category.csv' datatype='table' name='[__tableau_internal_object_id__].[real_brandClass_category.csv_F681C41B6687466EB9CE2D4F1D501E09]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
@@ -156,7 +155,7 @@
           <datasource-dependencies datasource='federated.1os0tbp0ut87wr151cjbn1qelhvh'>
             <column caption='Category' datatype='string' name='[F1]' role='dimension' type='nominal' />
             <column caption='BrandClass' datatype='string' name='[F2]' role='dimension' type='nominal' />
-            <column caption='Revenue' datatype='real' name='[F3]' role='measure' type='quantitative' />
+            <column caption='Revenue' datatype='real' name='[F3]' role='dimension' type='ordinal' />
             <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
             <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
             <column-instance column='[F3]' derivation='Sum' name='[pcto:sum:F3:qk]' pivot='key' type='quantitative'>
